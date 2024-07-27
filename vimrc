@@ -16,7 +16,7 @@ hi Search cterm=reverse ctermbg=none ctermfg=none
 "====== tab ======"
 "set shiftwidth=8
 set autoindent
-"filetype indent on
+filetype indent on
 "set tabstop=4
 "set smarttab
 
@@ -56,3 +56,13 @@ hi filepath cterm=none ctermbg=238 ctermfg=40
 hi filetype cterm=none ctermbg=238 ctermfg=45
 hi filesize cterm=none ctermbg=238 ctermfg=225
 hi position cterm=none ctermbg=238 ctermfg=228
+
+"====== plugin manager =====
+call pathogen#infect()
+
+"====== shortcut =====
+" nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap \n :NERDTreeFocus<CR>
+nnoremap <F2> :NERDTree<CR>
+nnoremap <F3> :NERDTreeToggle<CR>
+nnoremap <F4> :NERDTreeFind<CR>
